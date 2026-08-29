@@ -1,1 +1,8 @@
+# OS
 .DS_Store
+
+# Local visualizations
+.codex/visualizations/
+
+# Generated demo artifact from standalone/demo app
+demo/
