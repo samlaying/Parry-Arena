@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+:root { color-scheme: light dark; }
+* { box-sizing: border-box; }
+body { margin: 0; background: light-dark(#f6eef2, #160f13); color: light-dark(#281b22, #f8eef3); font-family: Inter, "PingFang SC", "Microsoft YaHei", sans-serif; }
+.demo-page { min-height: 100vh; padding: 48px 24px 24px; background: radial-gradient(circle at 50% 0%, light-dark(#f1dce5, #3a1e2b), transparent 42%); }
+.demo-intro { width: min(760px, 100%); margin: 0 auto 26px; display: flex; align-items: end; justify-content: space-between; gap: 24px; }
+.demo-kicker { margin: 0 0 6px; color: #b5305c; font-size: 13px; font-weight: 700; letter-spacing: .12em; }
+h1 { margin: 0; font: 800 clamp(30px, 5vw, 48px)/1.12 Georgia, "Songti SC", serif; letter-spacing: -.04em; }
+.demo-description { max-width: 540px; margin: 10px 0 0; color: light-dark(#785f6b, #cdb9c2); font-size: 14px; line-height: 1.65; }
+.demo-status { flex: none; padding: 9px 13px; border-radius: 99px; background: light-dark(#fff9fc, #2a1c23); box-shadow: 0 8px 24px #3e17231a; font-size: 12px; }
+.demo-status span { display: inline-block; width: 8px; height: 8px; margin-right: 7px; border-radius: 50%; background: #39b76e; }
+.demo-stage { width: min(760px, 100%); margin: auto; padding: 28px; border-radius: 34px; background: light-dark(#ffffffb8, #21161ccc); box-shadow: 0 28px 90px #4d263329; backdrop-filter: blur(18px); }
+.demo-frame { display: block; width: min(430px, 100%); height: 820px; margin: auto; border: 0; border-radius: 34px; background: transparent; }
+footer { margin-top: 18px; text-align: center; color: light-dark(#9a818c, #907984); font-size: 11px; }
+@media (max-width: 560px) { .demo-page { padding: 20px 0 0; } .demo-intro { padding: 0 18px; align-items: start; } .demo-status { display: none; } .demo-stage { padding: 0; border-radius: 28px 28px 0 0; } .demo-frame { width: 100%; height: 780px; border-radius: 28px 28px 0 0; } footer { display: none; } }
